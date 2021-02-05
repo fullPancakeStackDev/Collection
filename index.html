@@ -3,35 +3,83 @@
     *{
          margin: 0;   
     }
-    .b1{
-        background: blue;
-        height: 300px;
-        width: 200px;
-    }
-    .b2{
-        background: red;
-        height: 300px;
-        width: 200px;
-    }
-    .b3{
-        background: yellow;
-        height: 300px;
-        width: 200px;
+    header{
+        height: 1em;
+        padding: 20px 20px 30px;
+        font-size: 2em;
+        font-family: 'avenir', sans-serif;
     }
     .container{
+        margin: 10px;
         display: grid;
-        grid-gap: 5px;
+        grid-gap: 10px;
         grid-template-columns: 1fr 1fr 1fr;
-        /*grid-template-rows: 1fr 1fr 1fr;*/
     }
+    .box{
+        /*background: blue;*/
+        /*border-style: solid;*/
+        border-width: 1px;
+        height: 300px;
+        width: 1fr;
+    }
+    .image{
+        background: yellow;
+        height: 200px;
+        /*padding-top: 50px;*/
+        box-sizing: border-box;
+        margin-left: 5px;
+        
+        font-family: 'shadows into light', sans-serif;
+        text-align: center;
+    }
+    .product-name{
+        margin: 10px 5px 0px;
+        font-size: 1.5em;
+        font-family: 'avenir', sans-serif;
+    }
+    .price{
+        margin: 0px 5px;
+        font-size: 1.25em;
+        font-family: 'avenir', sans-serif;
+        /*font-weight: 900;*/
+        /*color: lightgray;*/
+    }
+    /*img{
+        max-height: 200px;
+        max-width: 100%;
+        height: auto;
+        margin: 0px;
+        position: relative;
+        left: 0;
+    
+        //float: left;
+    }*/
 </style>
 </head>
 <body>  
   <div class="container">
-    <div class="b1">b1</div>
-    <div class="b2">b2</div>
-    <div class="b3">b3</div>
-    <div class="b1">b4</div>
-    <div class="b2">b5</div>
+    <div class="box">
+        <div class="image">insert product photo here</div>
+        <div class="product-name">product name</div>
+        <div class="price">$99.99</div>
+    </div>
+
+    <div class="box">
+        <div class="image">insert product photo here</div>
+        <div class="product-name">product name</div>
+        <div class="price">$99.99</div>
+    </div>
+    
+    <div class="box">
+        <div class="image">insert product photo here</div>
+        <div class="product-name">product name</div>
+        <div class="price">$99.99</div>
+    </div>
+    
+    <div class="box">
+        <div class="image">insert product photo here</div>
+        <div class="product-name">product name</div>
+        <div class="price">$99.99</div>
+    </div>
 </div>
 </body>
